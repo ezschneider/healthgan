@@ -28,12 +28,20 @@ HealthGAN is a research-oriented project focused on generating synthetic, privac
    cd healthgan
    ```
 
-2. Build and run the container:
+2. Extract the dataset:
+   ```bash
+   unzip diabetes.zip
+   cd diabetes
+   uncompress diabetes-data.tar.Z
+   tar -xvf diabetes-data.tar
+   ```
+
+3. Build and run the container:
    ```bash
    docker-compose up --build
    ```
 
-3. Open Jupyter Notebook in your browser:
+4. Open Jupyter Notebook in your browser:
    ```
    http://localhost:8888
    ```
@@ -71,8 +79,11 @@ The project uses diabetes patient event logs consisting of timestamped events li
 - Insulin doses
 - Meal and activity logs
 
+After downloading and unzipping the `diabetes.zip`, navigate into the extracted folder and also unzip the `diabetes-data.tar.Z` to access the full dataset.
+
 ---
 
 ## 📖 License
 
 MIT License — feel free to use and adapt.
+
