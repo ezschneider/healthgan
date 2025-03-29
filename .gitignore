@@ -1,5 +1,9 @@
 # Ignore the data file extracted
 diabetes/
+daphnet_freezing_of_gait/
+
+# Trash files
+.Trash*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
