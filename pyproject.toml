@@ -1,0 +1,20 @@
+[project]
+name = "healthgan"
+version = "0.1.0"
+description = "A project for generating synthetic diabetes time series data using GANs."
+authors = [
+  { name="Ezequiel Schneider", email="ezequielschneiderr@gmail.com" }
+]
+dependencies = [
+  "cython",
+  "notebook",
+  "numpy",
+  "pandas",
+  "scipy",
+  "matplotlib",
+  "scikit-learn"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

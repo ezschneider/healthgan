@@ -1,0 +1,10 @@
+services:
+  dev:
+    build: .
+    container_name: healthgan-dev
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
