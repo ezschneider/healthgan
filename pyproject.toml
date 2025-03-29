@@ -14,7 +14,3 @@ dependencies = [
   "matplotlib",
   "scikit-learn"
 ]
-
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
