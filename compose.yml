@@ -2,9 +2,10 @@ services:
   dev:
     build: .
     container_name: healthgan
+    runtime: nvidia
+    environment:
+      - PYTHONUNBUFFERED=1
     ports:
       - "8888:8888"
     volumes:
       - .:/app
-    environment:
-      - PYTHONUNBUFFERED=1

@@ -1,0 +1,112 @@
+{
+    "tables": {
+        "intrusion_data": {
+            "columns": {
+                "Temp": {
+                    "sdtype": "numerical"
+                },
+                "SpO2": {
+                    "sdtype": "numerical"
+                },
+                "Pulse_Rate": {
+                    "sdtype": "numerical"
+                },
+                "SYS": {
+                    "sdtype": "numerical"
+                },
+                "DIA": {
+                    "sdtype": "numerical"
+                },
+                "Heart_rate": {
+                    "sdtype": "numerical"
+                },
+                "Resp_Rate": {
+                    "sdtype": "numerical"
+                },
+                "ST": {
+                    "sdtype": "numerical"
+                },
+                "Dport": {
+                    "sdtype": "categorical"
+                },
+                "SrcBytes": {
+                    "sdtype": "numerical"
+                },
+                "DstBytes": {
+                    "sdtype": "numerical"
+                },
+                "SrcLoad": {
+                    "sdtype": "numerical"
+                },
+                "DstLoad": {
+                    "sdtype": "numerical"
+                },
+                "SIntPkt": {
+                    "sdtype": "numerical"
+                },
+                "DIntPkt": {
+                    "sdtype": "numerical"
+                },
+                "SIntPktAct": {
+                    "sdtype": "numerical"
+                },
+                "SrcJitter": {
+                    "sdtype": "numerical"
+                },
+                "DstJitter": {
+                    "sdtype": "numerical"
+                },
+                "sMaxPktSz": {
+                    "sdtype": "numerical"
+                },
+                "dMaxPktSz": {
+                    "sdtype": "numerical"
+                },
+                "sMinPktSz": {
+                    "sdtype": "numerical"
+                },
+                "dMinPktSz": {
+                    "sdtype": "categorical"
+                },
+                "Dur": {
+                    "sdtype": "numerical"
+                },
+                "Trans": {
+                    "sdtype": "categorical"
+                },
+                "TotPkts": {
+                    "sdtype": "numerical"
+                },
+                "TotBytes": {
+                    "sdtype": "numerical"
+                },
+                "Load": {
+                    "sdtype": "numerical"
+                },
+                "Loss": {
+                    "sdtype": "numerical"
+                },
+                "pLoss": {
+                    "sdtype": "numerical"
+                },
+                "pSrcLoss": {
+                    "sdtype": "numerical"
+                },
+                "pDstLoss": {
+                    "sdtype": "numerical"
+                },
+                "Rate": {
+                    "sdtype": "numerical"
+                },
+                "Packet_num": {
+                    "sdtype": "numerical"
+                },
+                "Label": {
+                    "sdtype": "categorical"
+                }
+            }
+        }
+    },
+    "relationships": [],
+    "METADATA_SPEC_VERSION": "V1"
+}

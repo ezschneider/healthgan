@@ -5,6 +5,7 @@ description = "A project for generating synthetic diabetes time series data usin
 authors = [
   { name="Ezequiel Schneider", email="ezequielschneiderr@gmail.com" }
 ]
+requires-python = ">=3.10,<3.11"
 dependencies = [
   "cython",
   "notebook",
@@ -17,4 +18,11 @@ dependencies = [
   "xgboost>=3.0.2",
   "lightgbm>=4.6.0",
   "catboost>=1.2.8",
+  "basedosdados>=2.0.2",
+  "statsmodels>=0.14.4",
+  "prophet>=1.1.7",
+  "jupyterlab>=4.3.6",
+  "ipywidgets>=8.1.7",
+  "imbalanced-learn>=0.13.0",
+  "sdv>=1.24.0",
 ]

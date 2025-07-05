@@ -1,0 +1,21 @@
+FROM nvcr.io/nvidia/pytorch:23.10-py3
+
+WORKDIR /usr/local
+COPY opencv-install.tar.gz /tmp/opencv-install.tar.gz
+RUN tar -xzf /tmp/opencv-install.tar.gz && rm /tmp/opencv-install.tar.gz && ldconfig
+
+# Instala dependências mínimas
+RUN apt-get update && apt-get install -y ffmpeg libgtk-3-0
+
+WORKDIR /app
+COPY . .
+
+RUN pip install "nvidia-cudnn-cu12==9.0.0.312"
+RUN pip install "numpy<2"
+RUN pip install "pika"
+RUN pip install -r requirements.txt
+
+ENV LD_LIBRARY_PATH="/usr/local/cuda/lib64:/usr/local/lib/python3.10/dist-packages/nvidia/cudnn/lib"
+
+EXPOSE 8000
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--reload", "--port", "8000"]
