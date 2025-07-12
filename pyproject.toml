@@ -25,4 +25,6 @@ dependencies = [
   "ipywidgets>=8.1.7",
   "imbalanced-learn>=0.13.0",
   "sdv>=1.24.0",
+  "graphviz>=0.20.3",
+  "pydot>=4.0.1",
 ]

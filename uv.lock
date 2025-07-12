@@ -821,6 +821,7 @@ dependencies = [
     { name = "basedosdados" },
     { name = "catboost" },
     { name = "cython" },
+    { name = "graphviz" },
     { name = "imbalanced-learn" },
     { name = "ipywidgets" },
     { name = "jupyterlab" },
@@ -830,6 +831,7 @@ dependencies = [
     { name = "numpy" },
     { name = "pandas" },
     { name = "prophet" },
+    { name = "pydot" },
     { name = "scikit-learn" },
     { name = "scipy" },
     { name = "sdv" },
@@ -843,6 +845,7 @@ requires-dist = [
     { name = "basedosdados", specifier = ">=2.0.2" },
     { name = "catboost", specifier = ">=1.2.8" },
     { name = "cython" },
+    { name = "graphviz", specifier = ">=0.20.3" },
     { name = "imbalanced-learn", specifier = ">=0.13.0" },
     { name = "ipywidgets", specifier = ">=8.1.7" },
     { name = "jupyterlab", specifier = ">=4.3.6" },
@@ -852,6 +855,7 @@ requires-dist = [
     { name = "numpy" },
     { name = "pandas" },
     { name = "prophet", specifier = ">=1.1.7" },
+    { name = "pydot", specifier = ">=4.0.1" },
     { name = "scikit-learn" },
     { name = "scipy" },
     { name = "sdv", specifier = ">=1.24.0" },
@@ -2010,6 +2014,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/3f/0d/455cb39f0d5a914412b57c55c6b16977c61a5ac74b615eea4fb0dc54e329/pydata-google-auth-1.9.1.tar.gz", hash = "sha256:0a51ce41c601ca0bc69b8795bf58bedff74b4a6a007c9106c7cbcdec00eaced2", size = 29814, upload-time = "2025-01-23T21:04:40.875Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ca/cb/cdeaba62aa3c48f0d8834afb82b4a21463cd83df34fe01f9daa89a08ec6c/pydata_google_auth-1.9.1-py2.py3-none-any.whl", hash = "sha256:75ffce5d106e34b717b31844c1639ea505b7d9550dc23b96fb6c20d086b53fa3", size = 15552, upload-time = "2025-01-23T21:04:38.97Z" },
+]
+
+[[package]]
+name = "pydot"
+version = "4.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyparsing" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/50/35/b17cb89ff865484c6a20ef46bf9d95a5f07328292578de0b295f4a6beec2/pydot-4.0.1.tar.gz", hash = "sha256:c2148f681c4a33e08bf0e26a9e5f8e4099a82e0e2a068098f32ce86577364ad5", size = 162594, upload-time = "2025-06-17T20:09:56.454Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7e/32/a7125fb28c4261a627f999d5fb4afff25b523800faed2c30979949d6facd/pydot-4.0.1-py3-none-any.whl", hash = "sha256:869c0efadd2708c0be1f916eb669f3d664ca684bc57ffb7ecc08e70d5e93fee6", size = 37087, upload-time = "2025-06-17T20:09:55.25Z" },
 ]
 
 [[package]]
